@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SensorDemonstrations</string>
+    <string name="sensor_de_proximidade">Sensor de Proximidade</string>
+    <string name="sensor_de_aceler_metro">Sensor de acelerômetro</string>
+    <string name="sensor_de_luz">Sensor de Luz</string>
+    <string name="sensor_giroscopio">Sensor Giroscopio</string>
+    <string name="sensor_de_acelerometro">Sensor de Acelerometro</string>
 </resources>
