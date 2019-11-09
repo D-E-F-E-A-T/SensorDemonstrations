@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_sensor_luz.*
 class SensorLuz : AppCompatActivity(), SensorEventListener {
 
     lateinit var sensorManager: SensorManager
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor_luz)
@@ -57,11 +57,11 @@ class SensorLuz : AppCompatActivity(), SensorEventListener {
 
     override fun onResume() {
         super.onResume()
-        sensorManager.registerListener(this,sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT),SensorManager.SENSOR_DELAY_FASTEST)
+        sensorManager!!.registerListener(this,sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT),SensorManager.SENSOR_DELAY_FASTEST)
     }
 
     override fun onPause() {
         super.onPause()
-        sensorManager.unregisterListener(this)
+        sensorManager!!.unregisterListener(this)
     }
 }
